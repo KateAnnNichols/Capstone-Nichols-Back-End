@@ -1,0 +1,19 @@
+{{#each errors}}
+<div class="alert alert-danger">{{text}}</div>
+{{else}} {{/each}}
+
+<div class="card card-body">
+  <h3>Edit Student</h3>
+  <form action="/students/{{student.id}}?_method=PUT" method="post">
+    <input type="hidden" name="_method" value="PUT"/>
+    <div class="form-group">
+      <label for="name">Name</label>
+      <input type="text" class="form-control" name="name" value="{{student.name}}" required>
+    </div>
+    <div class="form-group">
+      <label for="boardsCompleted">Student ID</label>
+      <input type="checkbox" class="form-control" name="boardsCompleted">{{student.details}}</input>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>

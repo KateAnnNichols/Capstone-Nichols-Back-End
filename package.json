@@ -1,0 +1,28 @@
+{
+  "name": "sticker-star-backend",
+  "version": "1.0.0",
+  "description": "Sticker chart app",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "kate.nichols",
+  "license": "ISC",
+  "dependencies": {
+    "@okta/jwt-verifier": "^1.0.0",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.18.2",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-jwt": "^5.3.1",
+    "express-session": "^1.16.2",
+    "jwks-rsa": "^1.6.0",
+    "method-override": "^2.3.10",
+    "mongoose": "^5.6.5",
+    "nodemon": "^1.15.1",
+    "npm-run-all": "^4.1.5",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0",
+    "save": "^2.4.0"
+  }
+}
